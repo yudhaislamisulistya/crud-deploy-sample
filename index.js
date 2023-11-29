@@ -4,8 +4,10 @@ const app = express();
 app.use(express.json());
 
 const port = 3000;
+const apiRouter = express.Router();
 
-app.use('/users', userRoutes);
+apiRouter.use('/users', userRoutes);
+app.use('/api/v1', apiRouter);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
