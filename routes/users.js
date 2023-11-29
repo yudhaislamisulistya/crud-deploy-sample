@@ -2,7 +2,17 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
 
+/**
+ * @swagger
+ * /api/v1/users:
+ *   get:
+ *     summary: Returns the list of all users
+ *     responses:
+ *       200:
+ *         description: The list of users
+ */
 router.get('/', userController.getUsers);
+
 router.get('/:id', userController.getUser);
 router.post('/', userController.createUser);
 router.put('/:id', userController.updateUser);
