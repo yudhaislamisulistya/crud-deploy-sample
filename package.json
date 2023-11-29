@@ -1,0 +1,14 @@
+{
+  "name": "crud-deploy-sample",
+  "version": "1.0.0",
+  "description": "sample deployment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yudha Islami Sulistya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
